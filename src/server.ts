@@ -19,7 +19,7 @@ class Server{
 
         //Conectar a DB
 
-        const mongoDB = "mongodb://ec2-34-236-37-250.compute-1.amazonaws.com/geosmartDB"
+        const mongoDB = "mongodb://3.92.114.227/geosmartDB"
         mongoose.set('useFindAndModify',true);
         mongoose.connect( mongoDB || process.env.mongoDB ,{
             useNewUrlParser: true,
