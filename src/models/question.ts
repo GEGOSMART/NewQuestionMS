@@ -1,7 +1,7 @@
 import {Schema, model} from 'mongoose'
 
 const Question = new Schema({
-    title: { type: String },
+    continent: { type: String },
     questionCategory: { type: String, required: true },
     questionImage: { type: String, required: true },
     question: { type: String, required: true } ,
