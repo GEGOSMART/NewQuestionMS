@@ -19,7 +19,7 @@ class Server{
 
         //Conectar a DB
 
-        const mongoDB = "mongodb://3.92.114.227/geosmartDB"
+        const mongoDB = "mongodb+srv://admin:software2b@cluster0.5ge7q.mongodb.net/geodb?retryWrites=true&w=majority"
         mongoose.set('useFindAndModify',true);
         mongoose.connect( mongoDB || process.env.mongoDB ,{
             useNewUrlParser: true,
